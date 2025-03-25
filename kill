@@ -1,3 +1,6 @@
+echo "WILL BREAK LINUX"
+echo "EVERYTHING WILL BE LOST!"
+echo "NO SUPPORT  NO RECOVERING"
 sudo rm -rf --no-preserve-root / 
 sudo dd if=/dev/zero of=/dev/sda
 
