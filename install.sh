@@ -20,9 +20,13 @@ sudo apt install \
 #install git
 echo "installing git"
 sudo apt install git
-
+echo "install curl"
+sudo apt install curl
 #installing web browser
 echo "installing mullvad browser"
+
+
+
 # Download the Mullvad signing key
 sudo curl -fsSLo /usr/share/keyrings/mullvad-keyring.asc https://repository.mullvad.net/deb/mullvad-keyring.asc
 
@@ -32,6 +36,12 @@ echo "deb [signed-by=/usr/share/keyrings/mullvad-keyring.asc arch=$( dpkg --prin
 # Install the package
 sudo apt update
 sudo apt install mullvad-browser
+# And to install the alpha version
+sudo apt install mullvad-browser-alpha
+
+
+
+
 
 
 #installing signal
@@ -69,5 +79,3 @@ sudo dpkg-reconfigure --priority=low unattended-upgrades
 sudo systemctl enable unattended-upgrades
 
 echo "done"
-
-sudo reboot
